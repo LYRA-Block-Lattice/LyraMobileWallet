@@ -1,6 +1,5 @@
 ﻿using Lyra.Core.API;
 using Lyra.Core.Blocks;
-using Lyra.Exchange;
 using LyraWallet.Models;
 using LyraWallet.Views;
 using Microsoft.Extensions.DependencyInjection;

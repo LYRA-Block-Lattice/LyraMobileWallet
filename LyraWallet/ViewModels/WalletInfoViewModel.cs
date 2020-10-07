@@ -1,5 +1,4 @@
 ﻿using Lyra.Core.API;
-using Lyra.Core.Cryptography;
 using LyraWallet.Services;
 using LyraWallet.States;
 using LyraWallet.Views;

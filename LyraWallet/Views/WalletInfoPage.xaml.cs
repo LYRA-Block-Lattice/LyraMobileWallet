@@ -11,9 +11,9 @@ using Xamarin.Essentials;
 using LyraWallet.States;
 using LyraWallet.Services;
 using Acr.UserDialogs;
-using Lyra.Core.Cryptography;
 using System.IO;
 using System.Threading;
+using Lyra.Data.Crypto;
 
 namespace LyraWallet.Views
 {
