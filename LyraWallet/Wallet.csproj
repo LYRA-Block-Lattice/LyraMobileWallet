@@ -44,12 +44,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="lyra.core">
-      <HintPath>..\..\LyraNetwork\Core\Lyra.Core\bin\Release\netstandard2.1\lyra.core.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Views\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
