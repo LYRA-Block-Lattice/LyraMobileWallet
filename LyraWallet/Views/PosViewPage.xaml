@@ -8,7 +8,6 @@
              Title="Lyra POS Machine"
              BackgroundColor="White"
              xmlns:vm="clr-namespace:LyraWallet.ViewModels"
-             xmlns:views="clr-namespace:Plugin.Badge.Abstractions;assembly=Plugin.Badge.Abstractions"
              Visual="Material"
              x:Name="page">
     <ContentPage.BindingContext>
@@ -113,11 +112,11 @@
                            VerticalOptions="End" HorizontalOptions="EndAndExpand"/>
                     <Button Grid.Column="3" BackgroundColor="LightGreen" 
                             Text="Check Out" MinimumWidthRequest="100" Command="{Binding CheckoutCommand}" />
-                    <views:Badge Grid.Column="0"
+                    <!--<views:Badge Grid.Column="0"
                              BadgeText="{Binding CartCount}"
                              BadgeFontAttributes="{Binding FontAttributes}"
                              BackgroundColor="{Binding BadgeColor}"
-                             BadgeTextColor="{Binding BadgeTextColor}" />
+                             BadgeTextColor="{Binding BadgeTextColor}" />-->
                 </Grid>                
             </Frame>
             <Frame IsVisible="{Binding ProductEditMode}" HeightRequest="140" BackgroundColor="#D2FFF9">

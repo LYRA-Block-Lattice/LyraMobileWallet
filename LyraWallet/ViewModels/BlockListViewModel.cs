@@ -89,9 +89,9 @@ namespace LyraWallet.ViewModels
                         hash = block.Hash,
                         type = block.BlockType.ToString(),
                         balance = block.Balances.Aggregate(new StringBuilder(),
-                          (sb, kvp) => sb.AppendFormat("{0}{1} = {2}",
-                                       sb.Length > 0 ? ", " : "", kvp.Key, kvp.Value.ToBalanceDecimal()),
-                          sb => sb.ToString()),
+                          (sbd, kvp) => sbd.AppendFormat("{0}{1} = {2}",
+                                       sbd.Length > 0 ? ", " : "", kvp.Key, kvp.Value.ToBalanceDecimal()),
+                          sbd => sbd.ToString()),
 
                         action = action,
                         account = account,

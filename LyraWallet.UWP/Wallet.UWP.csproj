@@ -11,8 +11,8 @@
     <AssemblyName>WizWallet.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.18362.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
+    <TargetPlatformVersion>10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
@@ -104,10 +104,18 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="copy.png" />
-    <Content Include="lyracoins.png" />
-    <Content Include="lyralogo.png" />
-    <Content Include="paste.png" />
+    <Content Include="cart.png" />
+    <Content Include="consumergoods.png" />
+    <BundleResource Include="copy.png" />
+    <Content Include="discount.png" />
+    <BundleResource Include="lyracoins.png" />
+    <Content Include="lyraiconround.png" />
+    <BundleResource Include="lyralogo.png" />
+    <Content Include="lyralogosmall.png" />
+    <Content Include="LyraVector.png" />
+    <Content Include="minus.png" />
+    <BundleResource Include="paste.png" />
+    <Content Include="plus.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
@@ -150,14 +158,17 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.530" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1534" />
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.10" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LyraWallet\Wallet.csproj">
-      <Project>{DCF0E624-2C0D-4908-BFBA-D55DC3523781}</Project>
+      <Project>{30f40f87-3d12-4b63-8c93-47f8c731ba32}</Project>
       <Name>Wallet</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Fonts\materialdesignicons-webfont.ttf" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
